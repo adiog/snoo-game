@@ -1,0 +1,48 @@
+material MenuTopMaterial
+{
+	technique
+	{
+		pass
+		{
+			diffuse 1 1 1
+			specular 1 1 1 1
+                        scene_blend alpha_blend
+			texture_unit
+			{
+				texture menu_top.png
+			}
+		}
+	}
+}
+material MenuBottomMaterial
+{
+	technique
+	{
+		pass
+		{
+			diffuse 1 1 1
+			specular 1 1 1 1
+                        scene_blend alpha_blend
+			texture_unit
+			{
+				texture menu_bottom.png
+			}
+		}
+	}
+}
+material MenuMiddleMaterial
+{
+	technique
+	{
+		pass
+		{
+			diffuse 1 1 1
+			specular 1 1 1 1
+                        scene_blend alpha_blend
+			texture_unit
+			{
+				texture menu_middle.png
+			}
+		}
+	}
+}

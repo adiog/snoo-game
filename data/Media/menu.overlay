@@ -1,0 +1,51 @@
+template element TextArea(Snoo/MenuItem)
+{
+	metrics_mode pixels
+	font_name BsVS
+	left 25
+	top 25
+	width 250
+	height 20
+	char_height 25
+	colour_top 0 1 0
+	colour_bottom 1 0 0
+	
+}
+
+template container Panel(Snoo/MenuBoxTop)
+{
+		metrics_mode pixels
+		vert_align top
+		left 0
+		top 0
+		width 300	
+		height 25
+		material MenuTopMaterial
+}
+
+template container Panel(Snoo/MenuBoxMiddle)
+{
+		metrics_mode pixels
+		vert_align top
+		left 0
+		top 25
+		width 300
+		height 0
+		material MenuMiddleMaterial
+}
+
+template container Panel(Snoo/MenuBoxBottom)
+{
+		metrics_mode pixels
+		vert_align top
+		left 0 
+		top 25
+		width 300	
+		height 25
+		material MenuBottomMaterial
+}
+
+Snoo/MainMenu
+{
+	zorder 500
+}

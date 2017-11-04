@@ -1,0 +1,438 @@
+template container Panel(GUI/GenericPopup)
+{
+        metrics_mode pixels
+        vert_align top
+        left 0
+        top 0
+        width 600
+}
+
+template element TextArea(GUI/GenericText)
+{
+        metrics_mode pixels
+        font_name BsVS
+        left 0
+        top 0
+        char_height 16
+        colour 0 1 0
+}
+
+template container Panel(GUI/PopupTextPanel): GUI/GenericPopup
+{
+        material GuiPopupTextMaterial
+}
+
+template container Panel(GUI/PopupTitlePanel): GUI/GenericPopup
+{
+        height 25
+        material GuiPopupTitleMaterial
+}
+
+template element TextArea(GUI/PopupText): GUI/GenericText
+{
+        alignment center
+        char_height 20
+        left 300
+        top 5
+}
+
+template element TextArea(GUI/PopupButton): GUI/GenericText
+{
+        alignment center
+        left 300
+        colour 1 1 1
+        caption Press Enter... 
+}
+
+template container Panel(GUI/Column)
+{
+    metrics_mode pixels
+    top 70
+}
+
+Snoo/GUI
+{
+    zorder 1
+    
+    container Panel(GUI)
+    {
+        metrics_mode pixels
+        top 0
+        left 0
+        width 720
+        height 560
+
+        container Panel(GUI/GameList): GUI/PopupTextPanel
+        {
+            left 60
+            top 0
+            width 600
+            height 515
+
+            element TextArea(GUI/GameListTitle): GUI/GenericText
+            {
+                alignment center
+                left 300
+                char_height 20
+                colour 0.8 0.8 0.8
+                caption Snoo Server
+            }
+
+            element TextArea(GUI/GameListStatus): GUI/GenericText
+            {
+                alignment center
+                left 300
+                top 255
+                char_height 20
+                colour 0.8 0.8 0.8
+                caption Loading...
+            }
+
+            container Panel(GUI/GameListTable)
+            {
+                metrics_mode pixels;
+
+                container Panel(GUI/GameListIDColumn): GUI/Column
+                {
+                    left 50
+                    
+                    element TextArea(GUI/GameListTitleID): GUI/GenericText
+                    {
+                        top -20
+                        colour 0.8 0.8 0.8
+                        caption ID
+                    }
+                    
+                    element TextArea(GUI/GameListID): GUI/GenericText
+                    {
+                        colour 0.8 0.8 0.8
+                        caption 1
+                    }
+                }
+
+                container Panel(GUI/GameListP1Column): GUI/Column
+                {
+                    left 100
+                    
+                    element TextArea(GUI/GameListTitleP1): GUI/GenericText
+                    {
+                        top -20
+                        colour 0.8 0.8 0.8
+                        caption Player 1
+                    }
+                    
+                    element TextArea(GUI/GameListP1): GUI/GenericText
+                    {
+                        colour 0.8 0.8 0.8
+                        caption Sulik
+                    }
+                }
+
+                    
+                container Panel(GUI/GameListP2Column): GUI/Column
+                {
+                    left 250
+
+                    element TextArea(GUI/GameListTitleP2): GUI/GenericText
+                    {
+                        top -20
+                        colour 0.8 0.8 0.8
+                        caption Player 2
+                    }
+                    
+                    element TextArea(GUI/GameListP2): GUI/GenericText
+                    {
+                        colour 0.8 0.8 0.8
+                        caption Olek
+                    }
+                }
+                    
+                container Panel(GUI/GameListJoinColumn): GUI/Column
+                {
+                    left 400
+
+                    element TextArea(GUI/GameListJoinOn): GUI/GenericText
+                    {
+                        colour 1 1 1
+                    }
+                    
+                    element TextArea(GUI/GameListJoinOff): GUI/GenericText
+                    {
+                        caption Join
+                    }
+                    
+                    element TextArea(GUI/GameListCreateOn): GUI/GenericText
+                    {
+                        top -40
+                        colour 1 1 1
+                        caption Create new room
+                    }
+                    
+                    element TextArea(GUI/GameListCreateOff): GUI/GenericText
+                    {
+                        top -40
+                        caption Create new room
+                    }
+
+                }
+                    
+                container Panel(GUI/GameListSpectateColumn): GUI/Column
+                {
+                    left 450
+
+                    element TextArea(GUI/GameListSpectateOn): GUI/GenericText
+                    {
+                        colour 1 1 1
+                        caption Spectate
+                    }
+                    
+                    element TextArea(GUI/GameListSpectateOff): GUI/GenericText
+                    {
+                    }
+
+                }
+            }
+        }
+    
+        container Panel(GUI/BallPointer): GUI/PopupTextPanel
+        {
+            vert_align bottom
+            top -190
+            left 600
+            width 120
+            height 120
+
+            container Panel(GUI/BallPointerBall)
+            {
+                metrics_mode pixels
+                left 0
+                top 0
+                width 120
+                height 120
+                material GuiBallPointerMaterial
+                
+                container Panel(GUI/RedDot)
+                {
+                    metrics_mode pixels
+                    top 52
+                    left 52
+                    width 16
+                    height 16
+                    material GuiRedDot
+                }
+            }
+            
+        }
+
+        container Panel(GUI/Communication)
+        {
+            metrics_mode pixels
+            vert_align bottom
+            top -170
+            left 0
+            width 595
+            height 100
+        
+            container Panel(GUI/PlayerListPanel): GUI/PopupTextPanel
+            {
+                vert_align bottom
+                left 0
+                top -120
+                height 120
+                width 120
+
+                element TextArea(GUI/PlayerList): GUI/GenericText
+                {
+                    top 5
+                    left 5
+                    caption Sulik
+                }
+            }
+
+            container Panel(GUI/ChatPanel): GUI/PopupTextPanel
+            {
+                vert_align bottom
+                top -120
+                left 125
+                height 95
+                width 470
+
+                element TextArea(GUI/Chat): GUI/GenericText
+                {
+                    top 0
+                    left 5
+                }
+            }
+
+            container Panel(GUI/MessagePanel): GUI/PopupTitlePanel
+            {
+                vert_align bottom
+                top -25
+                left 125
+                width 470
+                height 25
+
+                element TextArea(GUI/Message): GUI/GenericText
+                {
+                    top 5
+                    left 5
+                    caption > nie, nie mozna
+                }
+            }
+        }
+
+        container Panel(GUI/Decisions): GUI/PopupTitlePanel
+        {
+            vert_align bottom
+            top -395
+            left 420
+            height 200
+            width 300
+
+            element TextArea(GUI/DecisionTitle): GUI/GenericText
+            {
+                left 5
+                top 5
+                colour 0.8 0.8 0.8
+                caption You can choose one of:
+            }
+
+            element TextArea(GUI/DecisionList): GUI/GenericText
+            {
+                left 5
+                top 20
+                caption Choose yellow ball as a freeball
+            }
+            
+            element TextArea(GUI/DecisionListHi): GUI/GenericText
+            {
+                left 5
+                top 20
+                colour 1 1 1
+                caption Choose yellow ball as a freeball
+            }
+
+        }
+
+        container Panel(GUI/BlueStripe)
+        {
+            metrics_mode pixels
+            vert_align bottom
+            top -65
+            left 0
+            width 720
+            height 40
+            material GuiBlueMaterial
+
+            container Panel(GUI/LeftTriangle)
+            {
+                metrics_mode pixels
+                top 0
+                left 0
+                width 40
+                height 40
+                material GuiLeftTriangle
+            }
+            
+            container Panel(GUI/RightTriangle)
+            {
+                metrics_mode pixels
+                alignment right
+                top 0
+                left 680
+                width 40
+                height 40
+                material GuiRightTriangle
+            }
+            
+            element TextArea(GUI/Points0): GUI/GenericText
+            {
+                left 40
+                top 5
+                width 300
+                height 40
+                char_height 40
+                colour_top 0 0 0
+                colour_bottom 0 0 0
+            }
+            
+            element TextArea(GUI/Points1): GUI/GenericText
+            {
+                alignment right
+                left 680
+                top 5
+                width 300
+                height 40
+                char_height 40
+                colour_top 0 0 0
+                colour_bottom 0 0 0
+            }
+            
+            container Panel(GUI/YellowStripe)
+            {
+                metrics_mode pixels
+                top 0
+                left 300
+                width 120
+                height 40
+                material GuiYellowMaterial
+                
+                element TextArea(GUI/Frames0): GUI/GenericText
+                {
+                    left 20
+                    top 5
+                    width 40
+                    height 40
+                    char_height 40
+                    colour_top 0 0 0
+                    colour_bottom 0 0 0
+                }
+                
+                element TextArea(GUI/Frames1): GUI/GenericText
+                {
+                    left 80
+                    top 5
+                    width 40
+                    height 40
+                    char_height 40
+                    colour_top 0 0 0
+                    colour_bottom 0 0 0
+                }
+            }        
+        }
+
+        container Panel(GUI/Status)
+        {
+            metrics_mode pixels
+            vert_align bottom
+            top -25
+            left 0
+            width 720
+            height 25
+            material GuiPopupTextMaterial
+
+            element TextArea(GUI/StatusTextLeft): GUI/GenericText
+            {
+                top 5
+                left 5
+                alignment left
+            }
+
+            element TextArea(GUI/StatusTextRight): GUI/GenericText
+            {
+                top 5
+                left 715
+                alignment right
+            }
+
+            element TextArea(GUI/Replay): GUI/GenericText
+            {
+                top 2
+                left 360
+                alignment center
+                char_height 27
+                caption REPLAY
+            }
+        }
+    }
+}

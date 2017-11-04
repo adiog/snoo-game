@@ -1,0 +1,56 @@
+
+material cue/Guma
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.384314 0.34902 0.498039 1
+			diffuse 0.772549 0.698039 1 1
+		}
+
+	}
+
+}
+
+material cue/Zloto
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.4 0.4 0 1
+			diffuse 0.8 0.8 0 1
+		}
+
+	}
+
+}
+
+material cue/Jesion
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.498039 0.498039 0.321569 1
+			diffuse 1 1 0.647059 1
+		}
+
+	}
+
+}
+
+material cue/Ciemnedrewno
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.0980392 0.0862745 0.0784314 1
+			diffuse 0.196078 0.172549 0.160784 1
+		}
+
+	}
+
+}

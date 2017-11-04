@@ -1,0 +1,12 @@
+material Skora
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			diffuse 0.480000 0.480000 0.000000 1.000000
+                        shading gouraud
+		}
+	}
+}

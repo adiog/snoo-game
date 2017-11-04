@@ -1,0 +1,86 @@
+
+Snoo/ACC
+{
+	zorder 500
+	
+	container Panel(ACC)
+	{
+		metrics_mode pixels
+		top 10
+		left 0
+		width 320
+		height 130
+		element TextArea(ACC/Label0)
+		{
+			metrics_mode pixels
+			font_name BsVS
+			left 5
+			top 5
+			width 300
+			height 20
+			char_height 15
+			colour_top 1 1 1
+			colour_bottom 1 1 1
+		}
+		element TextArea(ACC/Label1)
+		{
+			metrics_mode pixels
+			font_name BsVS
+			left 5
+			top 25
+			width 300
+			height 20
+			char_height 15
+			colour_top 1 1 1
+			colour_bottom 1 1 1
+		}
+		element TextArea(ACC/Label2)
+		{
+			metrics_mode pixels
+			font_name BsVS
+			left 5
+			top 45
+			width 300
+			height 20
+			char_height 15
+			colour_top 1 1 1
+			colour_bottom 1 1 1
+		}
+		element TextArea(ACC/Label3)
+		{
+			metrics_mode pixels
+			font_name BsVS
+			left 5
+			top 65
+			width 300
+			height 20
+			char_height 15
+			colour_top 1 1 1
+			colour_bottom 1 1 1
+		}
+		element TextArea(ACC/Label4)
+		{
+			metrics_mode pixels
+			font_name BsVS
+			left 5
+			top 85
+			width 300
+			height 20
+			char_height 15
+			colour_top 1 1 1
+			colour_bottom 1 1 1
+		}
+		element TextArea(ACC/Label5)
+		{
+			metrics_mode pixels
+			font_name BsVS
+			left 5
+			top 105
+			width 300
+			height 20
+			char_height 15
+			colour_top 1 1 1
+			colour_bottom 1 1 1
+		}
+	}
+}

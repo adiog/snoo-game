@@ -1,0 +1,2 @@
+PluginFolder=@OGRE_PLUGIN_FOLDER@
+Plugin=RenderSystem_GL

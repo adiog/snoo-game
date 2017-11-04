@@ -1,0 +1,273 @@
+material WhitePlastic/SOLID/TEX/white.jpg
+{
+  technique
+  {
+    pass
+    {
+      ambient 0 0 1
+      diffuse 0 0 0.5
+      specular 1 1 1 64
+      shading gouraud
+      texture_unit
+      {
+        colour_op_ex source1 src_manual src_current 1 1 1
+      }
+    }
+  }
+}
+material MaterialBall0
+{
+  technique
+  {
+    pass
+    {
+      ambient 1 1 1
+      diffuse 0.5 0.5 0.5
+      specular 1 1 1 64
+      polygon_mode solid
+    }
+  }
+}
+material MaterialBall0w
+{
+  technique
+  {
+    pass
+    {
+      ambient 1 1 1
+      diffuse 0.5 0.5 0.5
+      specular 1 1 1 64
+      polygon_mode wireframe
+    }
+  }
+}
+material MaterialBall1
+{
+  technique
+  {
+    pass
+    {
+      ambient 1 0 0
+      diffuse 0.5 0 0
+      specular 1 1 1 64
+      polygon_mode solid
+    }
+  }
+}
+material MaterialBall1w
+{
+  technique
+  {
+    pass
+    {
+      ambient 1 0 0
+      diffuse 0.5 0 0
+      specular 1 1 1 64
+      polygon_mode wireframe
+    }
+  }
+}
+material MaterialBall2
+{
+  technique
+  {
+    pass
+    {
+      ambient 1 1 0
+      diffuse 0.5 0.5 0
+      specular 1 1 1 64
+      polygon_mode solid
+      texture_unit
+      {
+        colour_op_ex source1 src_manual src_current 1 1 1
+      }
+    }
+  }
+}
+material MaterialBall2w
+{
+  technique
+  {
+    pass
+    {
+      ambient 1 1 0
+      diffuse 0.5 0.5 0
+      specular 1 1 1 64
+      polygon_mode wireframe
+      texture_unit
+      {
+        colour_op_ex source1 src_manual src_current 1 1 1
+      }
+    }
+  }
+}
+material MaterialBall3
+{
+  technique
+  {
+    pass
+    {
+      ambient 0 0.5  0
+      diffuse 0 0.25 0
+      specular 1 1 1 64
+      polygon_mode solid
+      texture_unit
+      {
+        colour_op_ex source1 src_manual src_current 1 1 1
+      }
+    }
+  }
+}
+material MaterialBall3w
+{
+  technique
+  {
+    pass
+    {
+      ambient 0 0.5  0
+      diffuse 0 0.25 0
+      specular 1 1 1 64
+      polygon_mode wireframe
+      texture_unit
+      {
+        colour_op_ex source1 src_manual src_current 1 1 1
+      }
+    }
+  }
+}
+material MaterialBall4
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.5  0.25  0
+      diffuse 0.25 0.125 0
+      specular 1 1 1 64
+      polygon_mode solid
+      texture_unit
+      {
+        colour_op_ex source1 src_manual src_current 1 1 1
+      }
+    }
+  }
+}
+material MaterialBall4w
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.5  0.25  0
+      diffuse 0.25 0.125 0
+      specular 1 1 1 64
+      polygon_mode wireframe
+      texture_unit
+      {
+        colour_op_ex source1 src_manual src_current 1 1 1
+      }
+    }
+  }
+}
+material MaterialBall5
+{
+  technique
+  {
+    pass
+    {
+      ambient 0 0 1.0
+      diffuse 0 0 0.5
+      specular 1 1 1 64
+      polygon_mode solid
+      texture_unit
+      {
+        colour_op_ex source1 src_manual src_current 1 1 1
+      }
+    }
+  }
+}
+material MaterialBall5w
+{
+  technique
+  {
+    pass
+    {
+      ambient 0 0 1.0
+      diffuse 0 0 0.5
+      specular 1 1 1 64
+      polygon_mode wireframe
+      texture_unit
+      {
+        colour_op_ex source1 src_manual src_current 1 1 1
+      }
+    }
+  }
+}
+material MaterialBall6
+{
+  technique
+  {
+    pass
+    {
+      ambient 1.0 0.50 0.50
+      diffuse 0.5 0.25 0.25
+      specular 1 1 1 64
+      polygon_mode solid
+      texture_unit
+      {
+        colour_op_ex source1 src_manual src_current 1 1 1
+      }
+    }
+  }
+}
+material MaterialBall6w
+{
+  technique
+  {
+    pass
+    {
+      ambient 1.0 0.50 0.50
+      diffuse 0.5 0.25 0.25
+      specular 1 1 1 64
+      polygon_mode wireframe
+      texture_unit
+      {
+        colour_op_ex source1 src_manual src_current 1 1 1
+      }
+    }
+  }
+}
+material MaterialBall7
+{
+  technique
+  {
+    pass
+    {
+      ambient 0 0 0
+      diffuse 0 0 0
+      specular 1 1 1 64
+      polygon_mode solid
+      texture_unit
+      {
+        colour_op_ex source1 src_manual src_current 1 1 1
+      }
+    }
+  }
+}
+material MaterialBall7w
+{
+  technique
+  {
+    pass
+    {
+      ambient 0 0 0
+      diffuse 0 0 0
+      specular 1 1 1 64
+      polygon_mode wireframe
+      texture_unit
+      {
+        colour_op_ex source1 src_manual src_current 1 1 1
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+material Material.001
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.5 0.5 0.5
+			diffuse 0.800000 0.000000 0.000000 1.000000
+			specular 0 0 0 0
+		}
+	}
+}
+
+material ArrowMat1
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.5 0.5 0.5
+			diffuse 0.8 0 0 1
+			specular 0 0 0 0
+		}
+	}
+}
+
+material ArrowMat2
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.5 0.5 0.5
+			diffuse 0.8 0.8 0 1
+			specular 0 0 0 0
+		}
+	}
+}
+
+material ArrowMat3
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.5 0.5 0.5
+			diffuse 0 0.4 0 1
+			specular 0 0 0 0
+		}
+	}
+}
+
+material ArrowMat4
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.5 0.5 0.5
+			diffuse 0.4 0.2 0 1
+			specular 0 0 0 0
+		}
+	}
+}
+
+material ArrowMat5
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.5 0.5 0.5
+			diffuse 0 0 0.8 1
+			specular 0 0 0 0
+		}
+	}
+}
+
+material ArrowMat6
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.5 0.5 0.5
+			diffuse 0.8 0.4 0.4 1
+			specular 0 0 0 0
+		}
+	}
+}
+
+material ArrowMat7
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.5 0.5 0.5
+			diffuse 0 0 0 1
+			specular 0 0 0 0
+		}
+	}
+}

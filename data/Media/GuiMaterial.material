@@ -1,0 +1,137 @@
+material GuiPopupTextMaterial
+{
+	technique
+	{
+		pass
+		{
+			diffuse 1 1 1
+			specular 1 1 1 1
+                        scene_blend alpha_blend
+			texture_unit
+			{
+				texture popuptext.png
+			}
+		}
+	}
+}
+
+material GuiPopupTitleMaterial
+{
+	technique
+	{
+		pass
+		{
+			diffuse 1 1 1
+			specular 1 1 1 1
+                        scene_blend alpha_blend
+			texture_unit
+			{
+				texture popuptitle.png
+			}
+		}
+	}
+}
+
+
+material GuiBlueMaterial
+{
+	technique
+	{
+		pass
+		{
+			diffuse 1 1 1
+			specular 1 1 1 1
+                        scene_blend alpha_blend
+			texture_unit
+			{
+				texture blue.png
+			}
+		}
+	}
+}
+
+material GuiYellowMaterial
+{
+	technique
+	{
+		pass
+		{
+			diffuse 1 1 1
+			specular 1 1 1 1
+                        scene_blend alpha_blend
+			texture_unit
+			{
+				texture yellow.png
+			}
+		}
+	}
+}
+
+material GuiBallPointerMaterial
+{
+	technique
+	{
+		pass
+		{
+			diffuse 1 1 1
+			specular 1 1 1 1
+                        scene_blend alpha_blend
+			texture_unit
+			{
+				texture 3dball.png
+			}
+		}
+	}
+}
+
+material GuiRedDot
+{
+	technique
+	{
+		pass
+		{
+			diffuse 1 1 1
+			specular 1 1 1 1
+                        scene_blend alpha_blend
+			texture_unit
+			{
+				texture red_dot.png
+			}
+		}
+	}
+}
+
+
+material GuiLeftTriangle
+{
+	technique
+	{
+		pass
+		{
+			diffuse 1 1 1
+			specular 1 1 1 1
+                        scene_blend alpha_blend
+			texture_unit
+			{
+				texture left_triangle.png
+			}
+		}
+	}
+}
+
+material GuiRightTriangle
+{
+	technique
+	{
+		pass
+		{
+			diffuse 1 1 1
+			specular 1 1 1 1
+                        scene_blend alpha_blend
+			texture_unit
+			{
+				texture right_triangle.png
+			}
+		}
+	}
+}

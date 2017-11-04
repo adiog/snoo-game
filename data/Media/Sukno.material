@@ -1,0 +1,17 @@
+material Sukno
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.000000 0.640000 0.000000
+			diffuse 0.000000 0.640000 0.000000
+                        shading gouraud
+			texture_unit
+			{
+				texture cloth.jpg
+			}
+		}
+	}
+}
