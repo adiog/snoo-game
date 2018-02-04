@@ -3,7 +3,7 @@
 
 #define OIS_DYNAMIC_LIB
 #include "OIS/OIS.h"
-#include "OgreTextAreaOverlayElement.h"
+#include <OGRE/Overlay/OgreTextAreaOverlayElement.h>
 #include "Menu.h"
 class Menu;
 

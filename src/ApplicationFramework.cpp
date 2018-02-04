@@ -3,13 +3,13 @@
 #include <iostream>
 #include <cstdlib>
 #include "Runtime.h"
-#include "OgreConfigFile.h"
-#include "OgreRoot.h"
-#include "OgreCamera.h"
-#include "OgreSceneManager.h"
-#include "OgreRenderWindow.h"
-#include "OgreString.h"
-#include "OgreOverlayManager.h"
+#include <OGRE/OgreConfigFile.h>
+#include <OGRE/OgreRoot.h>
+#include <OGRE/OgreCamera.h>
+#include <OGRE/OgreSceneManager.h>
+#include <OGRE/OgreRenderWindow.h>
+#include <OGRE/OgreString.h>
+#include <OGRE/Overlay/OgreOverlayManager.h>
 
 using namespace Ogre;
 

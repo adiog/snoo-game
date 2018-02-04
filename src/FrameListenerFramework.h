@@ -1,10 +1,10 @@
 #ifndef __FrameListenerFramework_h__
 #define __FrameListenerFramework_h__
 
-#include "OgreRenderWindow.h"
-#include "OgreCamera.h"
-#include "OgreFrameListener.h"
-#include "OgreWindowEventUtilities.h"
+#include <OGRE/OgreRenderWindow.h>
+#include <OGRE/OgreCamera.h>
+#include <OGRE/OgreFrameListener.h>
+#include <OGRE/OgreWindowEventUtilities.h>
 #define OIS_DYNAMIC_LIB
 #include "OIS/OIS.h"
 

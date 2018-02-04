@@ -2,7 +2,7 @@
 #define __Ball_h__
 
 #include "GameObject.h"
-#include "OgreSceneNode.h"
+#include <OGRE/OgreSceneNode.h>
 #include "BallPosition.h"
 
 class Ball: public GameObject {

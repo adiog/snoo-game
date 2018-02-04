@@ -16,10 +16,10 @@ void MenuItemLabel::setCaption(std::string caption)
     overlayElement->setCaption(caption);
 }
 
-std::string MenuItemLabel::getCaption(void)
-{
-    return overlayElement->getCaption();
-}
+//std::string MenuItemLabel::getCaption(void)
+//{
+//    return overlayElement->getCaption();
+//}
 
 void MenuItemLabel::setSelectable(bool s)
 {

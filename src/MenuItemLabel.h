@@ -13,7 +13,7 @@ class MenuItemLabel: public MenuItem {
         virtual void injectKey(OIS::KeyCode);
         virtual void setCaption(std::string);  ///< TODO: const string & 
         virtual void setSelectable(bool);
-        virtual std::string getCaption(void);
+//        virtual std::string getCaption(void);
         virtual ~MenuItemLabel();
     private:
         bool selectable;

@@ -3,8 +3,8 @@
 
 #include <string>
 
-#include "OgreTextAreaOverlayElement.h"
-#include "OgrePanelOverlayElement.h"
+#include <OGRE/Overlay/OgreTextAreaOverlayElement.h>
+#include <OGRE/Overlay/OgrePanelOverlayElement.h>
 
 
 Ogre::TextAreaOverlayElement * createTextArea(std::string);

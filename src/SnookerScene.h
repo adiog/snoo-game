@@ -2,10 +2,10 @@
 #define __SnookerScene_h__
 
 #include <string>
-#include "OgreLight.h"
-#include "OgreSceneManager.h"
-#include "OgreOverlay.h"
-#include "OgrePanelOverlayElement.h"
+#include <OGRE/OgreLight.h>
+#include <OGRE/OgreSceneManager.h>
+#include <OGRE/Overlay/OgreOverlay.h>
+#include <OGRE/Overlay/OgrePanelOverlayElement.h>
 #include "GameObject.h"
 #include "SnookerModel.h"
 #include "Ball.h"

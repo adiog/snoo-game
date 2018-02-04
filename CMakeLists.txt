@@ -51,7 +51,7 @@ file(
 )
 
 add_executable(snoo ${SOURCE_FILES})
-target_link_libraries(snoo pthread OIS OgreMain ${OGRE_LIBRARIES} ${OIS_LIBRARIES} ${Boost_SYSTEM_LIBRARY} ${Boost_THREAD_LIBRARY})
+target_link_libraries(snoo pthread OIS OgreMain OgreOverlay ${OGRE_LIBRARIES} ${OIS_LIBRARIES} ${Boost_SYSTEM_LIBRARY} ${Boost_THREAD_LIBRARY})
 
 
 

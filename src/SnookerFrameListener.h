@@ -1,8 +1,8 @@
 #ifndef __SnookerFrameListener_h__
 #define __SnookerFrameListener_h__
 
-#include "OgreRenderWindow.h"
-#include "OgreCamera.h"
+#include <OGRE/OgreRenderWindow.h>
+#include <OGRE/OgreCamera.h>
 #define OIS_DYNAMIC_LIB
 #include "OIS/OIS.h"
 #include "FrameListenerFramework.h"

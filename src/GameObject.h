@@ -1,8 +1,8 @@
 #ifndef __GameObject_h__
 #define __GameObject_h__
 
-#include "OgreSceneNode.h"
-#include "OgreEntity.h"
+#include <OGRE/OgreSceneNode.h>
+#include <OGRE/OgreEntity.h>
 
 class GameObject {
     public:

@@ -1,6 +1,6 @@
 #include "MenuItem.h"
 
-#include "OgreOverlayManager.h"
+#include <OGRE/Overlay/OgreOverlayManager.h>
 
 using namespace Ogre;
 

@@ -1,11 +1,11 @@
 #ifndef __ApplicationFramework_h_
 #define __ApplicationFramework_h_
 
-#include "OgreRoot.h"
-#include "OgreCamera.h"
-#include "OgreSceneManager.h"
-#include "OgreRenderWindow.h"
-#include "OgreString.h"
+#include <OGRE/OgreRoot.h>
+#include <OGRE/OgreCamera.h>
+#include <OGRE/OgreSceneManager.h>
+#include <OGRE/OgreRenderWindow.h>
+#include <OGRE/OgreString.h>
 #define OIS_DYNAMIC_LIB
 #include "OIS/OIS.h"
 

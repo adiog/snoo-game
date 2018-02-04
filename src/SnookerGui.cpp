@@ -3,8 +3,8 @@
 #include <sstream>
 #define OIS_DYNAMIC_LIB
 #include "OIS/OIS.h"
-#include "OgreOverlay.h"
-#include "OgreOverlayManager.h"
+#include <OGRE/Overlay/OgreOverlay.h>
+#include <OGRE/Overlay/OgreOverlayManager.h>
 
 #include "SnookerApplication.h"
 #include "Callbacks.h"

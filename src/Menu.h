@@ -4,8 +4,8 @@
 #define OIS_DYNAMIC_LIB
 #include "OIS/OIS.h"
 #include "MenuItem.h"
-#include "OgreOverlay.h"
-#include "OgrePanelOverlayElement.h"
+#include <OGRE/Overlay/OgreOverlay.h>
+#include <OGRE/Overlay/OgrePanelOverlayElement.h>
 class MenuItem;
 
 class Menu {

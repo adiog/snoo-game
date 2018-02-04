@@ -1,9 +1,9 @@
 #include "Popup.h"
 
 #include <string>
-#include "OgreOverlayManager.h"
-#include "OgreTextAreaOverlayElement.h"
-#include "OgrePanelOverlayElement.h"
+#include <OGRE/Overlay/OgreOverlayManager.h>
+#include <OGRE/Overlay/OgreTextAreaOverlayElement.h>
+#include <OGRE/Overlay/OgrePanelOverlayElement.h>
 
 #include "Id.h"
 #include "SnookerApplication.h"

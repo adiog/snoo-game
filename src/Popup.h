@@ -2,7 +2,7 @@
 #define __Popup_h__
 
 #include <string>
-#include "OgreOverlay.h"
+#include <OGRE/Overlay/OgreOverlay.h>
 
 class Popup {
     public:

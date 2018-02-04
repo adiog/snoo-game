@@ -3,7 +3,7 @@
 
 #include <queue>
 
-#include "OgreVector3.h"
+#include <OGRE/OgreVector3.h>
 #include "ApplicationFramework.h"
 #include "SnookerEventListener.h"
 #include "SnookerScene.h"

@@ -1,5 +1,5 @@
-#include "OgreSceneNode.h"
-#include "OgreEntity.h"
+#include <OGRE/OgreSceneNode.h>
+#include <OGRE/OgreEntity.h>
 
 #include "GameObject.h"
 

@@ -1,6 +1,6 @@
 #include "OverlayCommons.h"
 
-#include "OgreOverlayManager.h"
+#include <OGRE/Overlay/OgreOverlayManager.h>
 
 #include "Id.h"
 

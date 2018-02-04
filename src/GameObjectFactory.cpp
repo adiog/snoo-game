@@ -1,8 +1,8 @@
 #include "GameObjectFactory.h"
 
 #include <sstream>
-#include "OgreSceneManager.h"
-#include "OgreSubEntity.h"
+#include <OGRE/OgreSceneManager.h>
+#include <OGRE/OgreSubEntity.h>
 
 #include "GameObject.h"
 #include "Ball.h"

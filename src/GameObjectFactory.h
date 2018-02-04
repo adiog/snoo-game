@@ -1,8 +1,8 @@
 #ifndef __GameObjectFactory_h__
 #define __GameObjectFactory_h__
 
-#include "OgreSceneManager.h"
-#include "OgreSceneNode.h"
+#include <OGRE/OgreSceneManager.h>
+#include <OGRE/OgreSceneNode.h>
 
 #include "GameObject.h"
 #include "BallPosition.h"

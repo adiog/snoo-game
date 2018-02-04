@@ -1,5 +1,5 @@
-#include "OgreRenderWindow.h"
-#include "OgreCamera.h"
+#include <OGRE/OgreRenderWindow.h>
+#include <OGRE/OgreCamera.h>
 #include "SnookerFrameListener.h"
 #include "SnookerApplication.h"
 

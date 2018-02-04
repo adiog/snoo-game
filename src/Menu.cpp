@@ -3,9 +3,9 @@
 #define OIS_DYNAMIC_LIB
 #include "OIS/OIS.h"
 #include "MenuItem.h"
-#include "OgreOverlay.h"
-#include "OgrePanelOverlayElement.h"
-#include "OgreOverlayManager.h"
+#include <OGRE/Overlay/OgreOverlay.h>
+#include <OGRE/Overlay/OgrePanelOverlayElement.h>
+#include <OGRE/Overlay/OgreOverlayManager.h>
 
 using namespace Ogre;
 using namespace OIS;

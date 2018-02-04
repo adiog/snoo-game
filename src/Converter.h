@@ -1,8 +1,8 @@
 #ifndef __Converter_h__
 #define __Converter_h__
 
-#include "OgreVector3.h"
-#include "OgreQuaternion.h"
+#include <OGRE/OgreVector3.h>
+#include <OGRE/OgreQuaternion.h>
 #include "R3.h"
 #include "Orientation.h"
 

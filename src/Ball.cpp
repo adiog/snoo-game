@@ -2,9 +2,9 @@
 #include "Ball.h"
 #include "BallPosition.h"
 #include "Converter.h"
-#include "OgreEntity.h"
-#include "OgreSceneNode.h"
-#include "OgreVector3.h"
+#include <OGRE/OgreEntity.h>
+#include <OGRE/OgreSceneNode.h>
+#include <OGRE/OgreVector3.h>
 #include "Orientation.h"
 #include "SnooCommons.h"
 

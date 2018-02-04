@@ -2,9 +2,9 @@
 
 #include <iostream>
 #include <sstream>
-#include "OgreSceneManager.h"
-#include "OgreFrameListener.h"
-#include "OgreCamera.h"
+#include <OGRE/OgreSceneManager.h>
+#include <OGRE/OgreFrameListener.h>
+#include <OGRE/OgreCamera.h>
 
 #include "SnookerFrameListener.h"
 #include "SnookerScene.h"

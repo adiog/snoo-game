@@ -1,14 +1,14 @@
 #include "SnookerScene.h"
 
 #include <sstream>
-#include "OgreSceneNode.h"
-#include "OgreLight.h"
-#include "OgreSceneManager.h"
-#include "OgreSubEntity.h"
-#include "OgreOverlayManager.h"
-#include "OgrePanelOverlayElement.h"
-#include "Ogre.h"
-#include "OgreTextAreaOverlayElement.h"
+#include <OGRE/OgreSceneNode.h>
+#include <OGRE/OgreLight.h>
+#include <OGRE/OgreSceneManager.h>
+#include <OGRE/OgreSubEntity.h>
+#include <OGRE/Overlay/OgreOverlayManager.h>
+#include <OGRE/Overlay/OgrePanelOverlayElement.h>
+#include <OGRE/Ogre.h>
+#include <OGRE/Overlay/OgreTextAreaOverlayElement.h>
 
 #include "GameObjectFactory.h"
 #include "SnookerModel.h"
