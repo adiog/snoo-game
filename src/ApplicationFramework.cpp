@@ -3,6 +3,7 @@
 #include <iostream>
 #include <cstdlib>
 #include "Runtime.h"
+#include "SnooOverlayManager.h"
 #include <OGRE/OgreConfigFile.h>
 #include <OGRE/OgreRoot.h>
 #include <OGRE/OgreCamera.h>
@@ -146,6 +147,8 @@ void ApplicationFramework::createResourceListener(void)
 
 void ApplicationFramework::loadResources(void)
 {
+    SnooOverlayManager::getOverlaySystem();
+    SnooOverlayManager::getSingleton();
     ResourceGroupManager::getSingleton().initialiseAllResourceGroups();
 }
 

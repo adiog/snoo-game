@@ -17,6 +17,7 @@
 #include "MenuItemSubmenu.h"
 #include "OverlayCommons.h"
 #include "Id.h"
+#include "SnooOverlayManager.h"
 
 using namespace Ogre;
 
@@ -173,7 +174,7 @@ bool SnookerGui::injectKey(OIS::KeyCode code)
 
 void SnookerGui::initialize(void)
 {
-    OverlayManager * overlayManager = OverlayManager::getSingletonPtr();
+    OverlayManager * overlayManager = SnooOverlayManager::getSingletonPtr();
     SnookerApplication & application = SnookerApplication::getSingleton();
     
     createMainMenu();
@@ -262,7 +263,7 @@ void SnookerGui::showMessage(std::string title, std::string text)
 
 void SnookerGui::setLeftStatus(std::string text)
 {
-    OverlayManager * manager = OverlayManager::getSingletonPtr();
+    OverlayManager * manager = SnooOverlayManager::getSingletonPtr();
     TextAreaOverlayElement * el = dynamic_cast<TextAreaOverlayElement*>(
             manager->getOverlayElement("GUI/StatusTextLeft"));
     el->setCaption(text);
@@ -270,7 +271,7 @@ void SnookerGui::setLeftStatus(std::string text)
 
 void SnookerGui::setRightStatus(std::string text)
 {
-    OverlayManager * manager = OverlayManager::getSingletonPtr();
+    OverlayManager * manager = SnooOverlayManager::getSingletonPtr();
     TextAreaOverlayElement * el = dynamic_cast<TextAreaOverlayElement*>(
             manager->getOverlayElement("GUI/StatusTextRight"));
     el->setCaption(text);

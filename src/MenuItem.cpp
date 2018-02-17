@@ -1,4 +1,5 @@
 #include "MenuItem.h"
+#include "SnooOverlayManager.h"
 
 #include <OGRE/Overlay/OgreOverlayManager.h>
 
@@ -18,7 +19,7 @@ MenuItem::MenuItem(
     if (templateName == "")
         templateName = "Snoo/MenuItem";
     overlayElement = dynamic_cast<TextAreaOverlayElement*>(
-            OverlayManager::getSingleton().createOverlayElementFromTemplate(
+            SnooOverlayManager::getSingleton().createOverlayElementFromTemplate(
                 templateName, "TextArea", name));
 }
 

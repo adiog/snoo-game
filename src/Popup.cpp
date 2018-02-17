@@ -8,6 +8,7 @@
 #include "Id.h"
 #include "SnookerApplication.h"
 #include "OverlayCommons.h"
+#include "SnooOverlayManager.h"
 
 using namespace Ogre;
 
@@ -31,7 +32,7 @@ Popup::Popup(std::string titleStr, std::string textStr)
     const double ROW = 20.0; // wysokość wiersza tekstu
     const double HEIGHT = (lines + 4) * ROW; // wysokość popupa
 
-    OverlayManager * manager = OverlayManager::getSingletonPtr();
+    OverlayManager * manager = SnooOverlayManager::getSingletonPtr();
     overlay = manager->create(Id::generate());
     overlay->setZOrder(order++);
     

@@ -16,6 +16,7 @@
 #include "SnookerApplication.h"
 #include "Converter.h"
 #include "Table.h"
+#include "SnooOverlayManager.h"
 
 using namespace Ogre;
 
@@ -68,7 +69,10 @@ SnookerScene::SnookerScene(Ogre::SceneManager *manager, SnookerModel *m)
     light2->setSpecularColour(ColourValue(0.5, 0.5, 0.5));
     
     SnookerApplication & application = SnookerApplication::getSingleton();
-    OverlayManager * overlayManager = OverlayManager::getSingletonPtr();
+    OverlayManager * overlayManager = SnooOverlayManager::getSingletonPtr();
+
+    manager->addRenderQueueListener(SnooOverlayManager::getOverlaySystem());
+
     acc_ovl = overlayManager->getByName("Snoo/ACC");
     overlayManager->getOverlayElement("ACC")->setLeft(
             application.getWidth()-325);
@@ -138,7 +142,7 @@ void SnookerScene::update(void)
 
 void SnookerScene::setAccOvlVisible(bool s)
 {
-    OverlayManager * overlayManager = OverlayManager::getSingletonPtr();
+    OverlayManager * overlayManager = SnooOverlayManager::getSingletonPtr();
     if(s)
         overlayManager->getByName("Snoo/ACC")->show();
     else
@@ -149,7 +153,7 @@ void SnookerScene::setAccOvlText(int n, std::string s)
 {
     std::ostringstream elemname;
     elemname << "ACC/Label" << n;
-    OverlayManager::getSingletonPtr()->getOverlayElement(elemname.str())->setCaption(s);
+    SnooOverlayManager::getSingletonPtr()->getOverlayElement(elemname.str())->setCaption(s);
 }
 
 void SnookerScene::updateHint(void)

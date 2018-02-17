@@ -3,6 +3,7 @@
 #define OIS_DYNAMIC_LIB
 #include "OIS/OIS.h"
 #include "MenuItem.h"
+#include "SnooOverlayManager.h"
 #include <OGRE/Overlay/OgreOverlay.h>
 #include <OGRE/Overlay/OgrePanelOverlayElement.h>
 #include <OGRE/Overlay/OgreOverlayManager.h>
@@ -19,7 +20,7 @@ Menu::Menu(std::string name):
     height(0),
     visible(false)
 {
-    OverlayManager * manager = OverlayManager::getSingletonPtr();
+    OverlayManager * manager = SnooOverlayManager::getSingletonPtr();
     overlay = manager->create(name);
     topPanel = dynamic_cast<PanelOverlayElement*> (manager->
             createOverlayElementFromTemplate("Snoo/MenuBoxTop", "Panel", name + "Top"));
