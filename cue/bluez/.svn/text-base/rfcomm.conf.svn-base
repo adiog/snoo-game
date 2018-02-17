@@ -1,0 +1,17 @@
+#
+# RFCOMM configuration file.
+#
+
+rfcomm0 {
+	# Automatically bind the device at startup
+	bind yes;
+
+	# Bluetooth address of the device
+	device 00:12:6F:01:4D:78;
+
+	# RFCOMM channel for the connection
+	channel	1;
+
+	# Description of the connection
+	comment "SnooCue controller";
+}

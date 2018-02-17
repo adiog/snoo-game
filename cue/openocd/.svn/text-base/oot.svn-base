@@ -1,0 +1,3 @@
+#!/bin/bash
+export PWD=`pwd`
+telnet localhost 4444

@@ -1,0 +1,37 @@
+Kontroler SnooCue
+=================
+
+Oprogramowanie
+  Oprogramowanie napisane jest w jezyku C przy uzyciu zestawu narzedzi GNU
+  (arm-elf-*, wiecej informacji na www.gnuarm.com), przykladowy program
+  w katalogu terminal, wlasciwy - kontroler.
+
+Programowanie
+  Konktroler oparty jest o mikrokontroler LPC2103 oparty na rdzeniu ARM7TDMI.
+  Można go programowac np za pomoca narzedzia OpenOCD. W katalogu misc/openocd
+  znajduja sie skrypty uruchamiajace serwer i klienta OpenOCD, oraz plik
+  konfiguracyjny dla programatora JTAG typu wiggler. polozenie tego pliku
+  nalezy zaktualizowac w skrypcie oos.
+  Aby zaprogramowac mikrokontroler nalezy polaczyc wlaczony uklad z
+  programatorem, uruchomic serwer OpenOCD i w kliencie wpisac:
+    halt                  # zatrzymanie procesora
+	erase 0 0 7           # skasowanie wszystkich 8 sektorow pamieci
+	write 0 plik.bin 0    # zaprogramowanie MCU (sciezka wzgledem pwd klienta)
+	resume 0x00           # uruchomienie nowego programu od poczatku
+	
+ZMIANA: ARM-GCC nie radzi sobie (albo raczej ja nie radzę sobie w nim) z
+		przerwaniami - oprogramowanie powstaje w środowisku Keil MDK,
+		programowanie za pomocą programów z pakietu H-JTAG.
+
+Uklad
+  W katalogu SnooCue schemat i wzór płytki w formacie Eagle 5.4.0 oraz gotowe
+  pliki GERBER dla firmy prototypy.com, która wykonywała nasze płytki
+
+Bluetooth
+  Urzadzenie posiada modul Bluetooth z profilem SPP (Serial Port Profile).
+  Posiada identyfikator SnooCue i po ustanowieniu polaczenia (PIN: 1234)
+  komunikuje sie z nim jak przez zwykly port szeregowy.
+  Ustanowienie polaczenia w systemie Linux: pliki /etc/bluetooth/*.conf
+  powinny mieć zawartosc jak bluez/*.conf (w rfcomm.conf nalezy zaktualizowac
+  wartosc device). Jesli po restarcie uslugi bluetooth urzadzenie /dev/rfcomm0
+  nie pojawi sie, nalezy je dodac poleceniem rfcomm bind 0.

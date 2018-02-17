@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/Repos/ZPP08_SNOO/!svn/ver/416/cd/cue/terminal
+END
+lpc2103.ld
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/Repos/ZPP08_SNOO/!svn/ver/416/cd/cue/terminal/lpc2103.ld
+END
+lpc2103_flash.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/Repos/ZPP08_SNOO/!svn/ver/416/cd/cue/terminal/lpc2103_flash.cmd
+END
+startup.s
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/Repos/ZPP08_SNOO/!svn/ver/416/cd/cue/terminal/startup.s
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/Repos/ZPP08_SNOO/!svn/ver/416/cd/cue/terminal/main.c
+END
+crt.s
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/Repos/ZPP08_SNOO/!svn/ver/416/cd/cue/terminal/crt.s
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/Repos/ZPP08_SNOO/!svn/ver/416/cd/cue/terminal/Makefile
+END

@@ -1,0 +1,5 @@
+#!/bin/bash
+while true
+do
+openocd -f /home/adamek/arm/lpc2103_openocd_wig.cfg
+done
