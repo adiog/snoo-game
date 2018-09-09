@@ -1,0 +1,5 @@
+Dependecies on Ubuntu/Debian:
+```
+apt install libboost-system1.62-dev libboost-thread1.62-dev libogre-1.9-dev libois-dev
+```
+
