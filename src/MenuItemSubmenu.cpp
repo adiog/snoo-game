@@ -28,7 +28,7 @@ void MenuItemSubmenu::injectKey(OIS::KeyCode code)
         case KC_SPACE:
         case KC_RETURN:
             subMenu->setTop(getTop());
-            subMenu->setLeft(parentMenu->getLeft() + parentMenu->getWidth());
+            subMenu->setLeft(parentMenu->getWidth());
             subMenu->open(&parentMenu->subMenu);
             break;
         default:
